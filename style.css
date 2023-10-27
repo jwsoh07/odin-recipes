@@ -27,3 +27,10 @@ header>p {
     word-wrap: break-word;
     margin: 32px 0;
 }
+
+@media screen and (min-width: 768px) {
+  h1,
+  header>p {
+    text-align: left;
+  }
+}
