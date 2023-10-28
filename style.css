@@ -1,36 +1,48 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Regular.woff2') format('woff2');
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.woff2') format('woff2');
 }
 
 h1,
 header>p {
-    text-align: center;
+  text-align: center;
 }
 
 h1 {
-    color: #271A45;
-    font-size: 48px;
-    font-family: 'Roboto';
-    font-weight: 700;
-    line-height: 60px;
-    word-wrap: break-word;
-    margin: 32px 0 0 0;
+  color: #271A45;
+  font-size: 48px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  line-height: 60px;
+  word-wrap: break-word;
+  margin: 32px 0 0 0;
 }
 
 header>p {
-    color: #323238;
-    font-size: 20px;
-    font-family: 'Roboto';
-    font-weight: 400;
-    line-height: 32px;
-    word-wrap: break-word;
-    margin: 32px 0;
+  color: #323238;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  line-height: 32px;
+  word-wrap: break-word;
+  margin: 32px 0;
 }
 
-@media screen and (min-width: 768px) {
-  h1,
-  header>p {
-    text-align: left;
-  }
+@media screen and (min-width: 769px) {
+h1,
+header>p {
+  text-align: left;
+}
+
+main {
+  display: flex;
+}
+
+main > .recipes-container {
+  width: 60%;
+}
+
+main > aside {
+  width: 40%;
+}
 }
