@@ -3,6 +3,11 @@
   src: url('./fonts/Roboto-Regular.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('./fonts/Roboto-Light.woff2') format('woff2');
+}
+
 h1,
 header>p {
   text-align: center;
@@ -28,7 +33,7 @@ header>p {
   margin: 32px 0;
 }
 
-.recipes-container > h3 {
+.recipes-container>h3 {
   color: #271A45;
   font-size: 40px;
   font-family: Roboto;
@@ -37,30 +42,43 @@ header>p {
   word-wrap: break-word;
 }
 
-.recipes-container > ul {
+.recipes-container>ul {
   padding: 0;
   margin: 0;
+  color: #323238;
+  font-size: 17px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 38.40px;
+  word-wrap: break-word;
 }
 
-.recipes-container > ul a {
-  text-decoration: none;
+li:before {
+  content: '\00b7';
+  font-size: 20px;
+}
+
+.recipes-container>ul a {
+  text-decoration-thickness: 1.2px;
+  text-underline-offset: 1.3px;
+  font-family: 'Roboto-Light';
 }
 
 @media screen and (min-width: 769px) {
-h1,
-header>p {
-  text-align: left;
-}
+  h1,
+  header>p {
+    text-align: left;
+  }
 
-main {
-  display: flex;
-}
+  main {
+    display: flex;
+  }
 
-main > .recipes-container {
-  width: 60%;
-}
+  main>.recipes-container {
+    width: 60%;
+  }
 
-main > aside {
-  width: 40%;
-}
+  main>aside {
+    width: 40%;
+  }
 }
