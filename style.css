@@ -8,6 +8,12 @@
   src: url('./fonts/Roboto-Light.woff2') format('woff2');
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 h1,
 header>p {
   text-align: center;
@@ -40,6 +46,7 @@ header>p {
   font-weight: 700;
   line-height: 50px;
   word-wrap: break-word;
+  margin: 0 0 32px 0;
 }
 
 .recipes-container>ul {
@@ -114,9 +121,28 @@ li:before {
 .author-info > div:last-of-type {
   display: flex;
   gap: 5px;
+  align-items: center;
 }
 
 .author-info > div:last-of-type > p {
+  margin: 0;
+}
+
+.author-info > div:last-of-type > img {
+  width: 20px;
+  height: 20px;
+}
+
+.author-info > div:last-of-type > a {
+    color: #323238;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+    text-decoration: underline;
+    word-wrap: break-word;
+}
+
+main > aside > h3 {
   margin: 0;
 }
 
@@ -128,6 +154,7 @@ li:before {
 
   main {
     display: flex;
+    flex-direction: row;
   }
 
   main>.recipes-container {
