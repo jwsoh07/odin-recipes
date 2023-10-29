@@ -38,7 +38,7 @@ h1 {
   font-weight: 700;
   line-height: 60px;
   word-wrap: break-word;
-  margin: 0;
+  margin: 0 0 32px 0;
 }
 
 header>p {
@@ -84,20 +84,28 @@ li:before {
   font-family: 'Roboto-Light';
 }
 
+main > hr {
+  color: black;
+  margin: 0 25px;
+  width: calc(100vw - 50px);
+}
+
 .author-title {
   color: #633BBC;
   font-size: 12px;
   font-family: Roboto;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 28.80px;
+  margin: 0;
   letter-spacing: 1.80px;
-  word-wrap: break-word
+  word-wrap: break-word;
+  padding: 0 25px;
 }
 
 .author-container {
   display: flex;
   gap: 15px;
+  padding: 0 25px;
 }
 
 .author-container > img {
@@ -155,12 +163,14 @@ li:before {
     word-wrap: break-word;
 }
 
-main > aside {
-  background-color: #633BBC;
-  padding: 0 22px 22px 22px;
+main > aside > small {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 27px;
 }
 
-main > aside h3 {
+main > aside > section h2 {
   margin: 0;
   color: white;
   font-size: 32px;
@@ -181,7 +191,12 @@ main > aside p {
   margin: 0 0 32px 0;
 }
 
-main > aside h4 > span {
+main > aside > section {
+  padding: 0 22px 22px 22px;
+  background-color: #633BBC;
+}
+
+main > aside h3 > span {
   color: #04D361;
   font-size: 20px;
   font-family: Roboto;
@@ -190,7 +205,7 @@ main > aside h4 > span {
   word-wrap: break-word;
 }
 
-main > aside h4 {
+main > aside h3 {
   color: white;
 font-size: 18px;
 font-family: Roboto;
@@ -207,14 +222,26 @@ word-wrap: break-word;
 
   main {
     display: flex;
-    flex-direction: row;
   }
 
   main>.recipes-container {
     width: 60%;
   }
 
+  main > hr {
+    width: 100vw;
+    margin: 0;
+  }
+
   main>aside {
+    display: flex;
+  }
+
+  main > aside > small {
     width: 40%;
+  }
+
+  main > aside > section {
+    width: 60%;
   }
 }
