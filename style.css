@@ -64,6 +64,62 @@ li:before {
   font-family: 'Roboto-Light';
 }
 
+.author-title {
+  color: #633BBC;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 28.80px;
+  letter-spacing: 1.80px;
+  word-wrap: break-word
+}
+
+.author-container {
+  display: flex;
+  gap: 15px;
+}
+
+.author-container > img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.author-info > div:first-of-type {
+  color: #271A45;
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.author-info > p {
+  color: #323238;
+  font-size: 15px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+.author-info > div:last-of-type {
+  display: flex;
+  gap: 5px;
+}
+
+.author-info > div:last-of-type > p {
+  margin: 0;
+}
+
 @media screen and (min-width: 769px) {
   h1,
   header>p {
