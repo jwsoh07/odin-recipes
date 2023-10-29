@@ -157,6 +157,7 @@ li:before {
 
 main > aside {
   background-color: #633BBC;
+  padding: 0 22px 22px 22px;
 }
 
 main > aside h3 {
@@ -165,7 +166,7 @@ main > aside h3 {
   font-size: 32px;
   font-family: Roboto;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 88px;
   word-wrap: break-word;
   text-align: center;
 }
@@ -178,6 +179,24 @@ main > aside p {
   line-height: 26px;
   word-wrap: break-word;
   margin: 0 0 32px 0;
+}
+
+main > aside h4 > span {
+  color: #04D361;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 33.60px;
+  word-wrap: break-word;
+}
+
+main > aside h4 {
+  color: white;
+font-size: 18px;
+font-family: Roboto;
+font-weight: 700;
+line-height: 33.60px;
+word-wrap: break-word;
 }
 
 @media screen and (min-width: 769px) {
