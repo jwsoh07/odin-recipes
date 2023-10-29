@@ -8,10 +8,22 @@
   src: url('./fonts/Roboto-Light.woff2') format('woff2');
 }
 
+body {
+  margin: 24px 0 0 0;
+}
+
+body > header {
+  margin: 0 25px;
+}
+
 main {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+main > .recipes-container {
+  margin: 0 25px;
 }
 
 h1,
@@ -26,7 +38,7 @@ h1 {
   font-weight: 700;
   line-height: 60px;
   word-wrap: break-word;
-  margin: 32px 0 0 0;
+  margin: 0;
 }
 
 header>p {
