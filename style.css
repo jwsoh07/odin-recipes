@@ -73,7 +73,7 @@ header>p {
   list-style-type: none;
 }
 
-li:before {
+.recipes-container>ul>li:before {
   content: '\00b7';
   font-size: 20px;
 }
@@ -212,6 +212,22 @@ font-family: Roboto;
 font-weight: 700;
 line-height: 33.60px;
 word-wrap: break-word;
+}
+
+.websites ul,
+.dsa-questions ul,
+.open-source ul {
+  list-style-type: none;
+}
+
+.websites ul a,
+.dsa-questions ul a,
+.open-source ul a {
+  text-decoration-thickness: 1.2px;
+  text-underline-offset: 1.3px;
+  font-family: 'Roboto-Light';
+  font-size: 13px;
+  color: white;
 }
 
 @media screen and (min-width: 769px) {
