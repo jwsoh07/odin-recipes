@@ -10,6 +10,7 @@
             font-family: 'SourceSerif4-Bold';
             src: url('../fonts/SourceSerif4-Bold.woff2') format('woff2');
         }
+
         @font-face {
             font-family: 'SourceSerif4';
             src: url('../fonts/SourceSerif4-Regular.woff2') format('woff2');
@@ -33,9 +34,10 @@
             margin: 46px 0;
         }
 
-        body > p:first-of-type,
-        body > p:nth-of-type(2),
-        ul, ol {
+        body>p:first-of-type,
+        body>p:nth-of-type(2),
+        ul,
+        ol {
             color: #A54328;
             font-size: 14.17px;
             font-family: SourceSerif4;
@@ -46,60 +48,91 @@
         h2 {
             color: #A54328;
             font-family: SourceSerif4-Bold;
-        } 
+        }
 
-        ul, ol {
+        ul,
+        ol {
             color: #A54328;
             font-family: SourceSerif4;
         }
 
+        @media screen and (min-width: 769px) {
+            body {
+                display: flex;
+                justify-content: space-between;
+                margin: 53px 37px 54px 37px;
+            }
+
+            body > section,
+            body > main {
+                max-width: 500px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Lasagna</h1>
-        <img src="../img/lasagna.jpg" alt="A plate of Lasagna.">
-    </header>
+    <section>
+        <header>
+            <h1>Lasagna</h1>
+            <img src="../img/lasagna.jpg" alt="A plate of Lasagna.">
+        </header>
 
-    <p>
-        One of the most loved foods in the world is finally here! This is a traditional Italian Lasagna, made the
-        Italian way with layers of slow cooked Bolognese ragu and cheese sauce. No ricotta – that’s the American-Italian
-        version.
-    </p>
-    <p>
-        Lasagna, lasagna. How I love thee! It is possibly one of the most loved foods in the whole wide world, and
-        understandably so. There is just something so sentimental about lasagna, so comforting. It evokes images of of
-        gatherings with family and friends all around the world. It is the sort of food that is like a big warm hug, and
-        so more-ish you want to keep digging in until you burst.
-    </p>
-    <h2>ingredients</h2>
-    <ul>
-        <li>Onion, garlic, carrot and celery – for the flavour base, a soffrito;</li>
-        <li>Beef</li>
-        <li>Canned tomato and tomato paste</li>
-        <li>Red wine – for extra flavour!</li>
-        <li>Seasonings – beef bouillon cubes (stock cubes), bay leaves, thyme, oregano, Worcestershire sauce</li>
-    </ul>
-    <h2>steps</h2>
-    <ol>
-        <li>
-            <strong>Start by making the sauce</strong> with ground beef, bell peppers, onions, and a combo of tomato
-            sauce, tomato paste,
-            and crushed tomatoes. The three kinds of tomatoes gives the sauce great depth of flavor.
-        </li>
-        <li>
-            <strong>Let this simmer while you boil the noodles and get the cheeses ready.</strong>We're using ricotta,
-            shredded
-            mozzarella, and parmesan -- like the mix of tomatoes, this 3-cheese blend gives the lasagna great flavor!
-        </li>
-        <li><strong>From there, it's just an assembly job.</strong> A cup of meat sauce, a layer of noodles, more sauce,
-            followed by a
-            layer of cheese. Repeat until you have three layers and have used up all the ingredients.</li>
-        <li>
-            <strong>Bake until bubbly and you're ready to eat!</strong>
-        </li>
-    </ol>
+        <p>
+            One of the most loved foods in the world is finally here! This is a traditional Italian Lasagna, made the
+            Italian way with layers of slow cooked Bolognese ragu and cheese sauce. No ricotta – that’s the
+            American-Italian
+            version.
+        </p>
+        <p>
+            Lasagna, lasagna. How I love thee! It is possibly one of the most loved foods in the whole wide world, and
+            understandably so. There is just something so sentimental about lasagna, so comforting. It evokes images of
+            of
+            gatherings with family and friends all around the world. It is the sort of food that is like a big warm hug,
+            and
+            so more-ish you want to keep digging in until you burst.
+        </p>
+    </section>
+    <main>
+        <section>
+            <h2>ingredients</h2>
+            <ul>
+                <li>Onion, garlic, carrot and celery – for the flavour base, a soffrito;</li>
+                <li>Beef</li>
+                <li>Canned tomato and tomato paste</li>
+                <li>Red wine – for extra flavour!</li>
+                <li>Seasonings – beef bouillon cubes (stock cubes), bay leaves, thyme, oregano, Worcestershire sauce
+                </li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>steps</h2>
+            <ol>
+                <li>
+                    <strong>Start by making the sauce</strong> with ground beef, bell peppers, onions, and a combo of
+                    tomato
+                    sauce, tomato paste,
+                    and crushed tomatoes. The three kinds of tomatoes gives the sauce great depth of flavor.
+                </li>
+                <li>
+                    <strong>Let this simmer while you boil the noodles and get the cheeses ready.</strong>We're using
+                    ricotta,
+                    shredded
+                    mozzarella, and parmesan -- like the mix of tomatoes, this 3-cheese blend gives the lasagna great
+                    flavor!
+                </li>
+                <li><strong>From there, it's just an assembly job.</strong> A cup of meat sauce, a layer of noodles,
+                    more sauce,
+                    followed by a
+                    layer of cheese. Repeat until you have three layers and have used up all the ingredients.</li>
+                <li>
+                    <strong>Bake until bubbly and you're ready to eat!</strong>
+                </li>
+            </ol>
+
+        </section>
+    </main>
 </body>
 
 </html>
