@@ -19,7 +19,7 @@ body > header {
 main {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 42px;
 }
 
 main > .recipes-container {
